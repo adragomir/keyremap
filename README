@@ -1,1 +1,15 @@
+KeyRemap
+========
+
 Simple Key Remapping facility
+
+Create a configuration file in ~/.config/keyremap/config.py. The configuration must export a variable called CONFIG, 
+
+An example configuration: 
+
+CONFIG = {
+  "Mod4-c": """
+if wm_class == "gedit":
+  self.send_keys("Control-c")
+"""
+}
