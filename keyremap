@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys
+from keyremap.app import KeyHandler
+
+kh = KeyHandler()
+kh.run()
+sys.exit(0)

@@ -1,0 +1,8 @@
+$Id: INSTALL 345 2011-09-21 23:29:19Z cdekter@gmail.com $
+
+This application requires a full Debian package build - it cannot be installed using only
+the setup.py script:
+
+dpkg-buildpackage -us -uc
+cd ../
+sudo dpkg -i autokey-gtk_<version>.deb autokey-common_<version>.deb
